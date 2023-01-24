@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Student Admit Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class =" container">
+            <div class ="page-header text-center">
+        
+        <h3> Student Admit Form </h3>  
+            </div>
+        <form id="Studentform" method= "get">  
+            <div class="form-group">
+            
+            <label> Roll no </label>  
+            <input type="text" placeholder="Enter roll number" id ="rollno" class="form-control" onchange="getRoll()">
+            </div>
+            <div class="form-group">
+            <label> Name </label>  
+            <input type="text" placeholder="Enter name" id ="name" class="form-control"> 
+            </div>
+            <div class="form-group">
+            <label> Class </label> 
+            <input type="text" placeholder="Enter class/grade" id="class" class="form-control">
+            </div>
+            <div class="form-group">
+            <label> DOB </label> 
+            <input type="text" placeholder="DD/MM/YYYY" id="dob" class="form-control">
+            </div>
+            <div class="form-group">
+            <label>Address </label>  
+            <input type="text" placeholder="Enter Address" id="address" class="form-control">
+            </div>
+            <div class="form-group">
+            <label>Enrollment Date</label>  
+            <input type="text" placeholder="DD/MM/YYYY" id="doj" class="form-control">
+            </div>
+            <div class="form-group text-center">
+                <button type="button" class="btn btn-primary" id="Submit" onclick="submit_Form();"> Submit</button> 
+                <button type="button" class="btn btn-primary" id="Change" onclick="change();" > Change</button>
+                <button type="reset" class="btn btn-primary" id="Reset" onclick="resetForm();"> Reset </button>
+            </div>
+            </form>  
+         
+        <script src="index.js" charset="utf-8"> </script>
+    </body>
+</html>
